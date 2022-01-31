@@ -1,0 +1,14 @@
+<div>
+    <p>{{selectedHero.name | uppercase}} Details:</p>
+    <label for="name" class="form control">
+        Hero Name:
+        <input id="name" type="text" [(ngModel)]="selectedHero.name">
+    </label>
+    <br>
+    <span>
+        ID: {{ selectedHero.id }}
+    </span>
+    <hr>
+    <button class="btn btn-primary">Update Name</button>
+    <button class="btn btn-success" routerLink="/heroes">Go back to list</button>
+</div>

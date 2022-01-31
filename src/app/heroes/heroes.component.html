@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <br>
+        <div>
+            <ol [start]="heroes[0].id">
+                <li *ngFor="let hero of heroes">
+                    <a routerLink="/detail/{{hero.id}}">
+                    <p>{{hero.name | uppercase}}</p>
+                    <hr>
+                    </a>
+                </li>
+            </ol>
+        </div>
+    </div>
+</div>
